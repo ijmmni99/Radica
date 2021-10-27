@@ -1,2 +1,2 @@
 # Radica
-A basic HTML and Javascript to shows sorting function.
+A basic HTML and Javascript to present sorting function.
