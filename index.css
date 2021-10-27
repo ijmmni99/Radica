@@ -1,0 +1,33 @@
+.main {
+    margin: auto;
+    width: 70%;
+}
+
+.textbox {
+    padding: 20px;
+}
+
+.textbox input, label {
+    margin: 10px;
+}
+
+.textbox input[type="number"] {
+     width: 50px;   
+}
+
+.sorting {
+    width: 50%;
+    margin: auto;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+td {
+    word-wrap: break-word;
+}

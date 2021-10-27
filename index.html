@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radica Software</title>
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="textbox">
+        <form onsubmit="addUser(); return false;">
+            <label>userID</label><br>
+            <input type="number" id="userID" value="1" name="userID" readonly>
+
+            <input type="text" id="userName" name="userName" placeholder="UserName">
+            <input type="text" id="userOccupation" name="userOccupation" placeholder="UserOccupation">
+        
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div class="sorting">
+        <label for="category">Sort by:</label>
+
+        <select name="category" id="category" onchange="sortingarray(); return false;">
+        <option value="UserID">UserID</option>
+        <option value="UserName">UserName</option>
+        <option value="UserOccupation">UserOccupation</option>
+        </select>
+
+    </div>
+
+    <div class="table">
+        <table id="userTable" border="1">
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
