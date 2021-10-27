@@ -7,22 +7,37 @@
 </head>
 <body>
 
+<!-- main div -->
 <div class="main">
+
+    <!-- textbox div -->
     <div class="textbox">
+
+        <!-- User form -->
         <form onsubmit="addUser(); return false;">
+
+            <!-- User ID -->
             <label>userID</label><br>
             <input type="number" id="userID" value="1" name="userID" readonly>
 
+            <!-- User Name -->
             <input type="text" id="userName" name="userName" placeholder="UserName">
+            
+            <!-- User Occupation -->
             <input type="text" id="userOccupation" name="userOccupation" placeholder="UserOccupation">
-        
+            
+            <!-- submit button -->
             <button type="submit">Add</button>
         </form>
     </div>
 
+    <!-- sorting div -->
     <div class="sorting">
+
+        <!-- sort by label -->
         <label for="category">Sort by:</label>
 
+        <!-- category selection -->
         <select name="category" id="category" onchange="sortingarray(); return false;">
         <option value="UserID">UserID</option>
         <option value="UserName">UserName</option>
@@ -31,7 +46,10 @@
 
     </div>
 
+    <!-- table div -->
     <div class="table">
+
+        <!-- User Table -->
         <table id="userTable" border="1">
         </table>
     </div>
